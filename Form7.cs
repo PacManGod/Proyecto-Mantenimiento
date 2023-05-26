@@ -104,110 +104,147 @@ namespace Proyecto_09
 
 		private void InitializeComponent()
 		{
-			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-			this.label1 = new Label();
-			this.buttonExit = new Button();
-			this.label2 = new Label();
-			this.dataGridView1 = new DataGridView();
-			this.textBox1 = new TextBox();
-			this.button1 = new Button();
-			this.label3 = new Label();
-			this.label4 = new Label();
-			this.label5 = new Label();
-			((ISupportInitialize)this.dataGridView1).BeginInit();
-			base.SuspendLayout();
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
-			this.label1.Location = new Point(8, 392);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(224, 20);
-			this.label1.TabIndex = 2;
-			this.label1.Text = "Eficiencia de la Planeación";
-			this.buttonExit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			this.buttonExit.FlatAppearance.BorderSize = 0;
-			this.buttonExit.FlatStyle = FlatStyle.Flat;
-			this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, 0);
-			this.buttonExit.Location = new Point(581, 12);
-			this.buttonExit.Name = "buttonExit";
-			this.buttonExit.Size = new System.Drawing.Size(75, 23);
-			this.buttonExit.TabIndex = 22;
-			this.buttonExit.Text = "X";
-			this.buttonExit.UseVisualStyleBackColor = true;
-			this.buttonExit.Click += new EventHandler(this.buttonExit_Click);
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12f, FontStyle.Bold, GraphicsUnit.Point, 0);
-			this.label2.Location = new Point(8, 330);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(171, 20);
-			this.label2.TabIndex = 23;
-			this.label2.Text = "Indicador de calidad";
-			this.dataGridView1.AllowUserToAddRows = false;
-			this.dataGridView1.AllowUserToDeleteRows = false;
-			this.dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.dataGridView1.BorderStyle = BorderStyle.None;
-			this.dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle2.BackColor = SystemColors.Control;
-			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Bold, GraphicsUnit.Point, 0);
-			dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-			dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-			dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-			dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-			this.dataGridView1.ColumnHeadersHeight = 30;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-			this.dataGridView1.EnableHeadersVisualStyles = false;
-			this.dataGridView1.Location = new Point(12, 41);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.ReadOnly = true;
-			this.dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.Size = new System.Drawing.Size(644, 208);
-			this.dataGridView1.TabIndex = 24;
-			this.textBox1.Location = new Point(40, 280);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(70, 20);
-			this.textBox1.TabIndex = 25;
-			this.button1.Location = new Point(116, 278);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 26;
-			this.button1.Text = "Consultar";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new EventHandler(this.button1_Click);
-			this.label3.AutoSize = true;
-			this.label3.Location = new Point(16, 283);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(18, 13);
-			this.label3.TabIndex = 27;
-			this.label3.Text = "ID";
-			this.label4.Location = new Point(16, 359);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(369, 23);
-			this.label4.TabIndex = 28;
-			this.label4.Click += new EventHandler(this.label4_Click);
-			this.label5.Location = new Point(16, 422);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(369, 72);
-			this.label5.TabIndex = 29;
-			base.AutoScaleDimensions = new SizeF(6f, 13f);
-			base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			base.ClientSize = new System.Drawing.Size(668, 522);
-			base.Controls.Add(this.label5);
-			base.Controls.Add(this.label4);
-			base.Controls.Add(this.label3);
-			base.Controls.Add(this.button1);
-			base.Controls.Add(this.textBox1);
-			base.Controls.Add(this.dataGridView1);
-			base.Controls.Add(this.label2);
-			base.Controls.Add(this.buttonExit);
-			base.Controls.Add(this.label1);
-			base.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			base.Name = "Form7";
-			this.Text = "Form7";
-			((ISupportInitialize)this.dataGridView1).EndInit();
-			base.ResumeLayout(false);
-			base.PerformLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 370);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Eficiencia de la Planeación";
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Location = new System.Drawing.Point(581, 12);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.TabIndex = 22;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 308);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(138, 16);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Indicador de calidad";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeight = 30;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(644, 208);
+            this.dataGridView1.TabIndex = 24;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(40, 258);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(70, 24);
+            this.textBox1.TabIndex = 25;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(116, 259);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Consultar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 261);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 16);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "ID";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 337);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(369, 23);
+            this.label4.TabIndex = 28;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(16, 400);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(369, 72);
+            this.label5.TabIndex = 29;
+            // 
+            // Form7
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(668, 522);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form7";
+            this.Text = "Form7";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 
 		private void label4_Click(object sender, EventArgs e)

@@ -429,211 +429,305 @@ namespace Proyecto_09
 
 		private void InitializeComponent()
 		{
-			DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-			this.dataGridView1 = new DataGridView();
-			this.buttonExit = new Button();
-			this.textBox1 = new TextBox();
-			this.label1 = new Label();
-			this.label2 = new Label();
-			this.button1 = new Button();
-			this.labelTexto1 = new Label();
-			this.labelTexto2 = new Label();
-			this.labelTexto3 = new Label();
-			this.labelTexto4 = new Label();
-			this.labelTexto5 = new Label();
-			this.labelTexto6 = new Label();
-			this.labelTexto7 = new Label();
-			this.labelTexto8 = new Label();
-			this.labelTexto9 = new Label();
-			this.labelTexto10 = new Label();
-			this.labelTexto11 = new Label();
-			this.labelTexto12 = new Label();
-			this.labelTexto13 = new Label();
-			this.labelTexto14 = new Label();
-			((ISupportInitialize)this.dataGridView1).BeginInit();
-			base.SuspendLayout();
-			this.dataGridView1.AllowUserToAddRows = false;
-			this.dataGridView1.AllowUserToDeleteRows = false;
-			this.dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.dataGridView1.BorderStyle = BorderStyle.None;
-			this.dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-			dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle1.BackColor = SystemColors.Control;
-			dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Bold, GraphicsUnit.Point, 0);
-			dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-			dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-			dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-			dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-			this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.EnableHeadersVisualStyles = false;
-			this.dataGridView1.Location = new Point(12, 41);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.ReadOnly = true;
-			this.dataGridView1.RowHeadersVisible = false;
-			this.dataGridView1.Size = new System.Drawing.Size(660, 150);
-			this.dataGridView1.TabIndex = 0;
-			this.buttonExit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			this.buttonExit.FlatAppearance.BorderSize = 0;
-			this.buttonExit.FlatStyle = FlatStyle.Flat;
-			this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, 0);
-			this.buttonExit.Location = new Point(597, 12);
-			this.buttonExit.Name = "buttonExit";
-			this.buttonExit.Size = new System.Drawing.Size(75, 23);
-			this.buttonExit.TabIndex = 19;
-			this.buttonExit.Text = "X";
-			this.buttonExit.UseVisualStyleBackColor = true;
-			this.buttonExit.Click += new EventHandler(this.buttonExit_Click);
-			this.textBox1.Location = new Point(157, 249);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 20;
-			this.label1.AutoSize = true;
-			this.label1.Location = new Point(13, 213);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(181, 13);
-			this.label1.TabIndex = 21;
-			this.label1.Text = "Generar plan de mantenimiento para:";
-			this.label1.Click += new EventHandler(this.label1_Click);
-			this.label2.AutoSize = true;
-			this.label2.Location = new Point(16, 252);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(124, 13);
-			this.label2.TabIndex = 22;
-			this.label2.Text = "Numero de identificación";
-			this.button1.Location = new Point(288, 249);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 20);
-			this.button1.TabIndex = 23;
-			this.button1.Text = "Generar";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new EventHandler(this.button1_Click);
-			this.labelTexto1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto1.AutoSize = true;
-			this.labelTexto1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto1.Location = new Point(16, 309);
-			this.labelTexto1.Name = "labelTexto1";
-			this.labelTexto1.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto1.TabIndex = 24;
-			this.labelTexto2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto2.AutoSize = true;
-			this.labelTexto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto2.Location = new Point(16, 325);
-			this.labelTexto2.Name = "labelTexto2";
-			this.labelTexto2.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto2.TabIndex = 25;
-			this.labelTexto3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto3.AutoSize = true;
-			this.labelTexto3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto3.Location = new Point(16, 341);
-			this.labelTexto3.Name = "labelTexto3";
-			this.labelTexto3.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto3.TabIndex = 26;
-			this.labelTexto4.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto4.AutoSize = true;
-			this.labelTexto4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto4.Location = new Point(16, 357);
-			this.labelTexto4.Name = "labelTexto4";
-			this.labelTexto4.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto4.TabIndex = 27;
-			this.labelTexto5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto5.AutoSize = true;
-			this.labelTexto5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto5.Location = new Point(16, 373);
-			this.labelTexto5.Name = "labelTexto5";
-			this.labelTexto5.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto5.TabIndex = 28;
-			this.labelTexto6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto6.AutoSize = true;
-			this.labelTexto6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto6.Location = new Point(16, 389);
-			this.labelTexto6.Name = "labelTexto6";
-			this.labelTexto6.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto6.TabIndex = 29;
-			this.labelTexto7.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto7.AutoSize = true;
-			this.labelTexto7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto7.Location = new Point(16, 405);
-			this.labelTexto7.Name = "labelTexto7";
-			this.labelTexto7.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto7.TabIndex = 30;
-			this.labelTexto8.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto8.AutoSize = true;
-			this.labelTexto8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto8.Location = new Point(16, 421);
-			this.labelTexto8.Name = "labelTexto8";
-			this.labelTexto8.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto8.TabIndex = 31;
-			this.labelTexto9.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto9.AutoSize = true;
-			this.labelTexto9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto9.Location = new Point(16, 437);
-			this.labelTexto9.Name = "labelTexto9";
-			this.labelTexto9.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto9.TabIndex = 32;
-			this.labelTexto10.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto10.AutoSize = true;
-			this.labelTexto10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto10.Location = new Point(16, 453);
-			this.labelTexto10.Name = "labelTexto10";
-			this.labelTexto10.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto10.TabIndex = 33;
-			this.labelTexto11.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto11.AutoSize = true;
-			this.labelTexto11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto11.Location = new Point(16, 469);
-			this.labelTexto11.Name = "labelTexto11";
-			this.labelTexto11.Size = new System.Drawing.Size(0, 16);
-			this.labelTexto11.TabIndex = 34;
-			this.labelTexto12.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto12.Location = new Point(335, 309);
-			this.labelTexto12.Name = "labelTexto12";
-			this.labelTexto12.Size = new System.Drawing.Size(337, 48);
-			this.labelTexto12.TabIndex = 35;
-			this.labelTexto13.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto13.Location = new Point(335, 373);
-			this.labelTexto13.Name = "labelTexto13";
-			this.labelTexto13.Size = new System.Drawing.Size(337, 48);
-			this.labelTexto13.TabIndex = 36;
-			this.labelTexto13.Click += new EventHandler(this.label3_Click);
-			this.labelTexto14.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-			this.labelTexto14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, 0);
-			this.labelTexto14.Location = new Point(335, 437);
-			this.labelTexto14.Name = "labelTexto14";
-			this.labelTexto14.Size = new System.Drawing.Size(337, 48);
-			this.labelTexto14.TabIndex = 37;
-			base.AutoScaleDimensions = new SizeF(6f, 13f);
-			base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.AutoScroll = true;
-			base.ClientSize = new System.Drawing.Size(684, 561);
-			base.Controls.Add(this.labelTexto14);
-			base.Controls.Add(this.labelTexto13);
-			base.Controls.Add(this.labelTexto12);
-			base.Controls.Add(this.labelTexto11);
-			base.Controls.Add(this.labelTexto10);
-			base.Controls.Add(this.labelTexto9);
-			base.Controls.Add(this.labelTexto8);
-			base.Controls.Add(this.labelTexto7);
-			base.Controls.Add(this.labelTexto6);
-			base.Controls.Add(this.labelTexto5);
-			base.Controls.Add(this.labelTexto4);
-			base.Controls.Add(this.labelTexto3);
-			base.Controls.Add(this.labelTexto2);
-			base.Controls.Add(this.labelTexto1);
-			base.Controls.Add(this.button1);
-			base.Controls.Add(this.label2);
-			base.Controls.Add(this.label1);
-			base.Controls.Add(this.textBox1);
-			base.Controls.Add(this.buttonExit);
-			base.Controls.Add(this.dataGridView1);
-			base.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			base.Name = "Form4";
-			this.Text = "Form4";
-			((ISupportInitialize)this.dataGridView1).EndInit();
-			base.ResumeLayout(false);
-			base.PerformLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.labelTexto1 = new System.Windows.Forms.Label();
+            this.labelTexto2 = new System.Windows.Forms.Label();
+            this.labelTexto3 = new System.Windows.Forms.Label();
+            this.labelTexto4 = new System.Windows.Forms.Label();
+            this.labelTexto5 = new System.Windows.Forms.Label();
+            this.labelTexto6 = new System.Windows.Forms.Label();
+            this.labelTexto7 = new System.Windows.Forms.Label();
+            this.labelTexto8 = new System.Windows.Forms.Label();
+            this.labelTexto9 = new System.Windows.Forms.Label();
+            this.labelTexto10 = new System.Windows.Forms.Label();
+            this.labelTexto11 = new System.Windows.Forms.Label();
+            this.labelTexto12 = new System.Windows.Forms.Label();
+            this.labelTexto13 = new System.Windows.Forms.Label();
+            this.labelTexto14 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(10);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 41);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 15, 5, 15);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(660, 150);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonExit.FlatAppearance.BorderSize = 0;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Location = new System.Drawing.Point(597, 12);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.TabIndex = 19;
+            this.buttonExit.Text = "X";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(203, 249);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 24);
+            this.textBox1.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 213);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(251, 16);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Generar plan de mantenimiento para:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 252);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(172, 16);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Numero de identificación";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(334, 249);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 24);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Generar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // labelTexto1
+            // 
+            this.labelTexto1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto1.AutoSize = true;
+            this.labelTexto1.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto1.Location = new System.Drawing.Point(16, 287);
+            this.labelTexto1.Name = "labelTexto1";
+            this.labelTexto1.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto1.TabIndex = 24;
+            // 
+            // labelTexto2
+            // 
+            this.labelTexto2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto2.AutoSize = true;
+            this.labelTexto2.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto2.Location = new System.Drawing.Point(16, 303);
+            this.labelTexto2.Name = "labelTexto2";
+            this.labelTexto2.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto2.TabIndex = 25;
+            // 
+            // labelTexto3
+            // 
+            this.labelTexto3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto3.AutoSize = true;
+            this.labelTexto3.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto3.Location = new System.Drawing.Point(16, 319);
+            this.labelTexto3.Name = "labelTexto3";
+            this.labelTexto3.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto3.TabIndex = 26;
+            // 
+            // labelTexto4
+            // 
+            this.labelTexto4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto4.AutoSize = true;
+            this.labelTexto4.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto4.Location = new System.Drawing.Point(16, 335);
+            this.labelTexto4.Name = "labelTexto4";
+            this.labelTexto4.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto4.TabIndex = 27;
+            // 
+            // labelTexto5
+            // 
+            this.labelTexto5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto5.AutoSize = true;
+            this.labelTexto5.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto5.Location = new System.Drawing.Point(16, 351);
+            this.labelTexto5.Name = "labelTexto5";
+            this.labelTexto5.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto5.TabIndex = 28;
+            // 
+            // labelTexto6
+            // 
+            this.labelTexto6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto6.AutoSize = true;
+            this.labelTexto6.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto6.Location = new System.Drawing.Point(16, 367);
+            this.labelTexto6.Name = "labelTexto6";
+            this.labelTexto6.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto6.TabIndex = 29;
+            // 
+            // labelTexto7
+            // 
+            this.labelTexto7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto7.AutoSize = true;
+            this.labelTexto7.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto7.Location = new System.Drawing.Point(16, 383);
+            this.labelTexto7.Name = "labelTexto7";
+            this.labelTexto7.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto7.TabIndex = 30;
+            // 
+            // labelTexto8
+            // 
+            this.labelTexto8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto8.AutoSize = true;
+            this.labelTexto8.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto8.Location = new System.Drawing.Point(16, 399);
+            this.labelTexto8.Name = "labelTexto8";
+            this.labelTexto8.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto8.TabIndex = 31;
+            // 
+            // labelTexto9
+            // 
+            this.labelTexto9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto9.AutoSize = true;
+            this.labelTexto9.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto9.Location = new System.Drawing.Point(16, 415);
+            this.labelTexto9.Name = "labelTexto9";
+            this.labelTexto9.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto9.TabIndex = 32;
+            // 
+            // labelTexto10
+            // 
+            this.labelTexto10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto10.AutoSize = true;
+            this.labelTexto10.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto10.Location = new System.Drawing.Point(16, 431);
+            this.labelTexto10.Name = "labelTexto10";
+            this.labelTexto10.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto10.TabIndex = 33;
+            // 
+            // labelTexto11
+            // 
+            this.labelTexto11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto11.AutoSize = true;
+            this.labelTexto11.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto11.Location = new System.Drawing.Point(16, 447);
+            this.labelTexto11.Name = "labelTexto11";
+            this.labelTexto11.Size = new System.Drawing.Size(0, 16);
+            this.labelTexto11.TabIndex = 34;
+            // 
+            // labelTexto12
+            // 
+            this.labelTexto12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto12.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto12.Location = new System.Drawing.Point(335, 309);
+            this.labelTexto12.Name = "labelTexto12";
+            this.labelTexto12.Size = new System.Drawing.Size(337, 48);
+            this.labelTexto12.TabIndex = 35;
+            // 
+            // labelTexto13
+            // 
+            this.labelTexto13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto13.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto13.Location = new System.Drawing.Point(335, 373);
+            this.labelTexto13.Name = "labelTexto13";
+            this.labelTexto13.Size = new System.Drawing.Size(337, 48);
+            this.labelTexto13.TabIndex = 36;
+            this.labelTexto13.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // labelTexto14
+            // 
+            this.labelTexto14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTexto14.Font = new System.Drawing.Font("Neo Sans", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTexto14.Location = new System.Drawing.Point(335, 437);
+            this.labelTexto14.Name = "labelTexto14";
+            this.labelTexto14.Size = new System.Drawing.Size(337, 48);
+            this.labelTexto14.TabIndex = 37;
+            // 
+            // Form4
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(684, 561);
+            this.Controls.Add(this.labelTexto14);
+            this.Controls.Add(this.labelTexto13);
+            this.Controls.Add(this.labelTexto12);
+            this.Controls.Add(this.labelTexto11);
+            this.Controls.Add(this.labelTexto10);
+            this.Controls.Add(this.labelTexto9);
+            this.Controls.Add(this.labelTexto8);
+            this.Controls.Add(this.labelTexto7);
+            this.Controls.Add(this.labelTexto6);
+            this.Controls.Add(this.labelTexto5);
+            this.Controls.Add(this.labelTexto4);
+            this.Controls.Add(this.labelTexto3);
+            this.Controls.Add(this.labelTexto2);
+            this.Controls.Add(this.labelTexto1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form4";
+            this.Text = "Form4";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 
 		private void label1_Click(object sender, EventArgs e)
